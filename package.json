@@ -1,0 +1,35 @@
+{
+  "name": "interim-assesment-greenman225",
+  "version": "1.0.0",
+  "description": "Coinbase Clone - Full Stack Application with Authentication and Crypto Integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend && npm run dev",
+    "dev:all": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "coinbase",
+    "clone",
+    "crypto",
+    "authentication",
+    "mongodb"
+  ],
+  "author": "Greenman225",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}
